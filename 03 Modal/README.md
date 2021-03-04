@@ -1,7 +1,12 @@
 # NGX Bootstrap Modal
 
-
 ### Step 01
+Install NGX Bootstrap
+```js
+npm i ngx-bootstrap
+```
+
+### Step 02
 First add modal in app.module.ts
 ```js
 // RECOMMENDED
@@ -17,7 +22,7 @@ export class AppModule(){}
 
 
 
-### Step 02
+### Step 03
 Add modal in template
 ```html
 <button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
@@ -35,7 +40,7 @@ Add modal in template
 </ng-template>
 ```
 
-### Step 03
+### Step 04
 Add Modal function in component
 ```js
 import { Component, TemplateRef } from '@angular/core';
@@ -57,7 +62,7 @@ export class DemoModalServiceStaticComponent {
 
 Done but things to be remember. How to add custom event for opening modal!
 
-### Step 04
+### Step 05
 ```js
 import { ViewChild, TemplateRef } from '@angular/core';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
